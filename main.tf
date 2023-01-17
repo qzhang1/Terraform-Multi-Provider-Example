@@ -5,6 +5,14 @@
 // vpc_id (thru data)
 // incoming_security_groups
 // subnet_ids
+
+terraform {
+  required_version = ">= 0.13"
+  required_providers {
+    aws = "<= 4.16"
+  }
+}
+
 data "aws_vpc" "my_default_vpc" {
   id="insert your vpc id"
 }

@@ -42,4 +42,5 @@ variable "incoming_security_groups" {
 
 variable "replication_region" {
   type = string
+  default = ""
 }

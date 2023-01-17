@@ -1,10 +1,3 @@
-terraform {
-  required_providers {
-    aws = {
-      configuration_aliases = [aws, aws.v4]
-    }
-  }
-}
 
 // no replication so default aws provider ver 3.55
 module "firstChild" {
